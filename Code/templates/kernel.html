@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="text-center">
+    <h2 class="mb-4">🖥️ Kernel Version</h2>
+    <p class="lead">Your server is running on:</p>
+    <div class="alert alert-info" role="alert">
+      <strong>{{ version }}</strong>
+    </div>
+    <a href="/" class="btn btn-secondary">Back to Home</a>
+  </div>
+{% endblock %}
