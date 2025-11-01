@@ -19,7 +19,7 @@ jobs:
         with:
           host: ip-172-31-23-58.eu-north-1.compute.internal
           username: SiddheshAdmin
-          key: vZk2uqKePZPRwFBB/A131JjeGdXIm95Izhs/PkyJ
+          key: ${{ secrets.EC2_KEY}}
           port: 22
           script: |
             echo "📁 Navigating to app directory..."
