@@ -22,6 +22,5 @@ jobs:
           script: |
             cd /home/ec2-user/CICD-project
             git pull origin main
-            cd Code
             source venv/bin/activate
             sudo systemctl restart flaskapp
