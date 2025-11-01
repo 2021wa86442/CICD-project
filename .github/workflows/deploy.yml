@@ -22,6 +22,7 @@ jobs:
           key: ${{ secrets.EC2_KEY}}
           port: 22
           script: |
+            echo "$secrets.EC2_KEY"
             echo "📁 Navigating to app directory..."
             cd /var/www/CICD-project   # 🔁 CHANGE this to your app path on EC2
 
