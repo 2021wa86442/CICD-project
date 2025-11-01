@@ -17,9 +17,9 @@ jobs:
       - name: Connect and Deploy via SSH
         uses: appleboy/ssh-action@v0.1.10
         with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ${{ secrets.EC2_USER }}
-          key: ${{ secrets.EC2_KEY }}
+          host: ip-172-31-23-58.eu-north-1.compute.internal
+          username: SiddheshAdmin
+          key: vZk2uqKePZPRwFBB/A131JjeGdXIm95Izhs/PkyJ
           port: 22
           script: |
             echo "📁 Navigating to app directory..."
