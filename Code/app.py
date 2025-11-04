@@ -14,3 +14,15 @@ def kernel():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
+
+
+import logging
+
+logging.basicConfig(filename='/var/log/myflaskapp/myapp.log',
+                    level=logging.INFO,
+                    format='%(asctime)s %(levelname)s %(message)s')
+
+@app.route('/')
+def home():
+    logging.info("Home page accessed")
+    return "Hello, Flask with CloudWatch!"
